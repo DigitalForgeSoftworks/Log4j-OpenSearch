@@ -47,6 +47,7 @@ class OpenSearchPublisherThread implements Runnable {
 
     public void stop() {
         this.running = false;
+        processQueue();
     }
 
     @Override
